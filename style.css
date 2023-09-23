@@ -43,13 +43,10 @@ button {
     cursor: pointer;
 }
 
-
-
 button:hover {
     background-color: #777;
     transform: scale(1.1);
 }
-
 
 .equals {
     grid-column: span 1;
@@ -61,4 +58,23 @@ button:hover {
 
 .delete {
     background-color: red;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 10px;
+    }
+
+    .screen {
+        font-size: 18px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
 }
